@@ -2,6 +2,7 @@
 import { Row, Col, Container} from 'react-bootstrap';
 import {useState, useEffect, useCallback} from 'react';
 import {client} from '../../../pages/api/client';
+import Link from 'next/link'
 
 function PorfolioHome() {
     const [isPortfolioLoading, setIsPortfolioLoading] = useState(false)
@@ -55,9 +56,9 @@ function PorfolioHome() {
                                         <source srcSet={item.imageMobile} media="(min-width: 600px)"></source>
                                         <img src={item.imgPc} className="PorfolioHome-card--img" alt="MDN"></img>
                                     </picture>  
-                                    <a className="PorfolioHome-card--info" href={`/porfolio/${item.slideSlug}`}> 
+                                    <Link className="PorfolioHome-card--info" href={`/porfolio/${item.slideSlug}`}> 
                                         <h3 className="title title--secondary">{item.slidesSubtitle}</h3>
-                                    </a>
+                                    </Link>
                                 </div>
                             </Col>
                         )}
