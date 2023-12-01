@@ -1,0 +1,81 @@
+//Texto
+@mixin text ($size, $color, $weight, $fontfamily){
+    font-family: $fontfamily;
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    margin-bottom: 0;
+}
+
+
+//Botón
+@mixin btn ($bg-color){
+    background: $bg-color;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 24px;
+    font-family: $m-plus;
+    font-weight: 500;
+    font-size: .8125rem;
+    line-height: 1rem;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: $black-01;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        color: $white-f6;
+        background-color: $purple;
+    }
+    p {
+        text-align: center;
+        text-decoration: none !important;
+        text-transform: capitalize;
+        display: inline-block;
+        margin: 0;
+    }
+}
+
+//RESPONSIVE
+@mixin xxl() {
+    @media screen and (min-width: $xxl) {
+        @content;
+    }
+}
+@mixin xl() {
+    @media screen and (min-width: $xl) {
+        @content;
+    }
+}
+@mixin lg() {
+    @media screen and (min-width: $lg) {
+        @content;
+    }
+}
+@mixin md() {
+    @media screen and (min-width: $md) {
+        @content;
+    }
+}
+@mixin sm() {
+    @media screen and (min-width: $sm) {
+        @content;
+    }
+}
+@mixin xsm() {
+    @media screen and (min-width: $xsm) {
+        @content;
+    }
+}
+@mixin xxsm() {
+    @media screen and (min-width: $xxsm) {
+        @content;
+    }
+}

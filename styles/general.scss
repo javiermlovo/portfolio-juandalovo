@@ -1,0 +1,23 @@
+@import './abstract/variable';
+@import './abstract/fonts';
+@import './abstract/mixings';
+@import './abstract/extends';
+@import './base/base';
+@import './base/resets';
+@import './components';
+
+:root {
+  /* colors brand*/
+  --black-01: #010101;
+  --white:#ffffff;
+  --white-f6:#f6f6f6;
+  --gray: #646667;
+  --blue:#6DC9F7;
+  --pink:#F78691;
+  --purple:#674f75;
+
+  /*fonts*/
+  --m-plus: 'M PLUS 1p', sans-serif;
+  --tenor: 'Tenor Sans', sans-serif;
+}
+

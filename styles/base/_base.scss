@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: $m-plus !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // background-color: greenyellow;
+    background-color: $white-f6 !important;
+}
+
+code {
+    font-family: $m-plus;
+}
+
+
+//Provicional mientras se determina todo lo que debe cambiar de color
+body.dark {
+    background-color: $black-01 !important;
+    .darkMode-applicable {
+        background-color: $black-01;
+        p,a,svg {
+            color: $white-f6;
+        }
+        .navbar-nav 
+        .nav-link.active, 
+        .navbar-nav 
+        .nav-link.show{
+            color: $white-f6;
+        }
+        .dropdown-item {
+            background-color: $black-01;
+        }
+        .header--logo,.footer--logo{
+            filter: invert(1);
+        }
+        .footer--social-media {
+            a,svg {
+                &:hover{
+                    color: $pink;
+                }
+            }
+        }
+        .dropdown-toggle::after{
+            border-top: 0.3em solid $white-f6;
+            border-right: 0.3em solid transparent;
+            border-bottom: 0;
+            border-left: 0.3em solid transparent;
+        }
+        .navbar-toggler-icon{
+            background-image: url("data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27><path stroke=%27rgba%28255, 255, 255, 0.75%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/></svg>");
+        }
+        .navbar-collapse{
+            background-color: $black-01;
+        }
+        .title {
+            color: $white;
+        }
+        .carrusel {
+            background-color: $black-01;
+            .swiper{
+                background-color: $black-01;
+            }
+        }
+    }
+}
+
